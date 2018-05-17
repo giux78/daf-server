@@ -1,0 +1,164 @@
+[{
+    "id" : "Milano_quartieri",
+    "city" : "Milano",
+    "type" : "source",
+    "url" : "http://localhost:4000/Milano/Milano_quartieri.geojson",
+    "center" : [9.191383, 45.464211],
+    "zoom" : 11,
+    "joinField" : "IDquartiere",
+    "nameField" : "quartiere",
+    "dataSource" : "Comune di Milano",
+    "default" : true,
+    "indicators" : []
+},{
+    "id" : "Milano_EducazioneCultura",
+    "indicators" : [{
+        "category" : "Educazione e Cultura",
+        "id" : "School",
+        "label" : "Scuole",
+	"dataSource" : "MIUR",
+	"labels" : ["","","6-10","10-15","15-19","","","","","",""]
+    }],
+    "city" : "Milano",
+    "sourceId" : "Milano_quartieri",
+    "type" : "layer",
+    "url" : "http://localhost:4000/Milano/Milano_EducazioneCultura.json"
+},{
+    "id" : "Milano_Trasporti",
+    "city" : "Milano",
+    "type" : "layer",
+    "sourceId" : "Milano_quartieri",
+    "indicators" : [{
+        "category" : "Trasporti",
+        "dataSource" : "GTFS Comuni",
+        "id" : "TransportStop",
+        "label" : "Fermate TPL"
+    }],
+    "url" : "http://localhost:4000/Milano/Milano_Trasporti.json"
+},{
+    "id" : "Milano_Vitalita",
+    "city" : "Milano",
+    "type" : "layer",
+    "sourceId" : "Milano_quartieri",
+    "dataSource" : "ISTAT (censimento 2011 della popolazione e delle abitazioni)",
+    "url" : "http://localhost:4000/Milano/Milano_Vitality.json",
+    "indicators" : [{
+	"category" : "Vitalità",
+	"label" : "Tipo di alloggi",
+	"id" : "tipo_di_alloggi"
+    },{
+	"category" : "Vitalità",
+	"label" : "Densità di occupati (per mq) normalizzata a media 1",
+	"id" : "densita_occupati",
+	"default" : true
+    }]
+},{
+    "id" : "Milano_Istat",
+    "city" : "Milano",
+    "type" : "layer",
+    "sourceId" : "Milano_quartieri",
+    "dataSource" : "ISTAT (censimento 2011 della popolazione e delle abitazioni)",
+    "url" : "http://localhost:4000/Milano/Milano_Istat.json",
+    "indicators" : [{
+	"category" : "Popolazione",
+	"label" : "Popolazione residente",
+	"id" : "P1"
+    }]
+},{
+    "id" : "Milano_Salute",
+    "city" : "Milano",
+    "type" : "layer",
+    "url" : "http://localhost:4000/Milano/Milano_Salute.json",
+    "indicators" : [{
+        "category" : "Salute",
+        "dataSource" : "Min. Salute",
+        "id" : "Pharmacy",
+	"label" : "Farmacie",
+        "labels" : ["","3-6","6-10","10-15","15-19","19-25","25-35","35-50","50-65","65-74","74 e più"]
+    }],
+    "sourceId" : "Milano_quartieri"
+},{
+    "id" : "Torino_quartieri",
+    "city" : "Torino",
+    "type" : "source",
+    "url" : "http://localhost:4000/Torino/0_geo_zone_circoscrizioni_wgs84.json",
+    "dataSource" : "tbd",
+    "center" : [7.6869, 45.0703],
+    "zoom" : 10.5,
+    "joinField" : "IDquartiere",
+    "nameField" : "DENOM",
+    "indicators" : [],
+    "default" : true
+},{
+    "id" : "Torino_Salute",
+    "city" : "Torino",
+    "type" : "layer",
+    "url" : "http://localhost:4000/Torino/Torino_Salute.json",
+    "indicators" : [{
+        "category" : "Salute",
+        "dataSource" : "Min. Salute",
+        "id" : "Pharmacy",
+        "label" : "Farmacie",
+	"labels" : ["","3-6","6-10","10-15","15-19","19-25","25-35","35-50","50-65","65-74","74 e più"]
+    }],
+    "sourceId" : "Torino_quartieri"
+},{
+    "city" : "Torino",
+    "id" : "Torino_EducazioneCultura",
+    "indicators" : [{
+        "category" : "Educazione e Cultura",
+        "dataSource" : "MIUR",
+        "id" : "School",
+        "label" : "Scuole",
+	"labels": ["","","6-10","10-15","15-19","","","","","",""]
+    }],
+    "sourceId" : "Torino_quartieri",
+    "type" : "layer",
+    "url" : "http://localhost:4000/Torino/Torino_EducazioneCultura.json"
+},{
+    "city" : "Torino",
+    "id" : "Torino_Trasporti",
+    "indicators" : [{
+        "category" : "Trasporti",
+        "dataSource" : "GTFS Comuni",
+        "id" : "TransportStop",
+        "label" : "Fermate TPL",
+	"labels": ["","","6-10","10-15","15-19","19-25","25-35","35-50","50-65","65-74","74 e più"]
+    }],
+    "sourceId" : "Torino_quartieri",
+    "type" : "layer",
+    "url" : "http://localhost:4000/Torino/Torino_Trasporti.json"
+},{
+    "id" : "Torino_Vitalita",
+    "city" : "Torino",
+    "type" : "layer",
+    "sourceId" : "Torino_quartieri",
+    "dataSource" : "ISTAT (censimento 2011 della popolazione e delle abitazioni)",
+    "url" : "http://localhost:4000/Torino/Torino_Vitality.json",
+    "indicators" : [{
+	"category" : "Vitalità",
+	"label" : "Tipi di Alloggio",
+	"id" : "tipo_di_alloggi"
+    },{
+	"category" : "Vitalità",
+	"label" : "Densità di occupati (per mq)",
+	"id" : "densita_occupati",
+	"default" : true
+    },{
+	"category" : "Popolazione",
+	"label" : "Numero di residenti",
+	"id" : "residenti"
+    }]
+},{
+    "id" : "Torino_Istat",
+    "city" : "Torino",
+    "type" : "layer",
+    "sourceId" : "Torino_quartieri",
+    "dataSource" : "ISTAT (censimento 2011 della popolazione e delle abitazioni)",
+    "url" : "http://localhost:4000/Torino/Torino_Istat.json",
+    "indicators" : [{
+        "category" : "Popolazione",
+        "label" : "Popolazione residente",
+        "id" : "P1"
+    }]
+}]
