@@ -48,7 +48,7 @@
 	"id" : "tipo_di_alloggi"
     },{
 	"category" : "Vitalità",
-	"label" : "Densità di occupati (per mq) normalizzata a media 1",
+	"label" : "Densità di occupati (per mq)",
 	"id" : "densita_occupati",
 	"default" : true
     }]
@@ -144,10 +144,6 @@
 	"label" : "Densità di occupati (per mq)",
 	"id" : "densita_occupati",
 	"default" : true
-    },{
-	"category" : "Popolazione",
-	"label" : "Numero di residenti",
-	"id" : "residenti"
     }]
 },{
     "id" : "Torino_Istat",

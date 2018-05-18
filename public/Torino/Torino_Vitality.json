@@ -1,42 +1,58 @@
 [
-    {
-        "IDquartiere" : 1,
-	"densita_occupati" : 0.8552,
-        "tipo_di_alloggi" : 3.7495
-    },
-    {
-        "IDquartiere" : 2,
-	"densita_occupati" : 1.2878,
-        "tipo_di_alloggi" : 3.2274
-    },
-    {
-        "IDquartiere" : 3,
-	"densita_occupati" : 0.0226,
-        "tipo_di_alloggi" : 3.4428
-    },
-    {
-        "IDquartiere" : 4,
-	"densita_occupati" : 1.4243,
-        "tipo_di_alloggi" : 3.4999
-    },
-    {
-        "IDquartiere" : 5,
-	"densita_occupati" : 2.0322,
-        "tipo_di_alloggi" : 3.0213
-    },
-    {
-        "IDquartiere" : 6,
-	"densita_occupati" : 1.464,
-        "tipo_di_alloggi" : 2.8676
-    },
-    {
-        "IDquartiere" : 7,
-	"densita_occupati" : 0.0005,
-        "tipo_di_alloggi" : 2.9169
-    },
-    {
-        "IDquartiere" : 8,
-	"densita_occupati" : 1.3603,
-        "tipo_di_alloggi" : 3.0943
-    }
+  {
+    "IDquartiere": 1,
+    "SUPERF": 6881184,
+    "densita_occupati": 0.017082526,
+    "tipo_di_alloggi": 3.387256,
+    "residenti": 159316
+  },
+  {
+    "IDquartiere": 2,
+    "SUPERF": 19051974,
+    "densita_occupati": 0.003717095,
+    "tipo_di_alloggi": 2.92887,
+    "residenti": 130281
+  },
+  {
+    "IDquartiere": 3,
+    "SUPERF": 8600578,
+    "densita_occupati": 0.010228266,
+    "tipo_di_alloggi": 3.012803,
+    "residenti": 138395
+  },
+  {
+    "IDquartiere": 4,
+    "SUPERF": 9091856,
+    "densita_occupati": 0.00882713,
+    "tipo_di_alloggi": 3.143983,
+    "residenti": 114273
+  },
+  {
+    "IDquartiere": 5,
+    "SUPERF": 15461844,
+    "densita_occupati": 0.004525527,
+    "tipo_di_alloggi": 2.769671,
+    "residenti": 127752
+  },
+  {
+    "IDquartiere": 6,
+    "SUPERF": 25460028,
+    "densita_occupati": 0.002944144,
+    "tipo_di_alloggi": 2.863563,
+    "residenti": 108608
+  },
+  {
+    "IDquartiere": 7,
+    "SUPERF": 22331840,
+    "densita_occupati": 0.003462769,
+    "tipo_di_alloggi": 2.946832,
+    "residenti": 123132
+  },
+  {
+    "IDquartiere": 8,
+    "SUPERF": 23119840,
+    "densita_occupati": 0.004684245,
+    "tipo_di_alloggi": 3.088777,
+    "residenti": 175822
+  }
 ]
