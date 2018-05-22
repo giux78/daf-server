@@ -17,7 +17,8 @@
         "id" : "School",
         "label" : "Scuole",
 	"dataSource" : "MIUR",
-	"labels" : ["","","6-10","10-15","15-19","","","","","",""]
+	"labels" : ["","","6-10","10-15","15-19","","","","","",""],
+        "colors" : ["#E8F8F5","#D1F2EB","#A3E4D7","#76D7C4","#48C9B0","#1ABC9C","#148F77","#17A589","#0E6251"]
     }],
     "city" : "Milano",
     "sourceId" : "Milano_quartieri",
@@ -32,7 +33,8 @@
         "category" : "Trasporti",
         "dataSource" : "GTFS Comuni",
         "id" : "TransportStop",
-        "label" : "Fermate TPL"
+        "label" : "Fermate TPL",
+	"colors" : ["#EAF2F8","#D4E6F1","#A9CCE3","#7FB3D5","#5499C7","#2980B9","#2471A3","#1F618D","#1A5276"]
     }],
     "url" : "http://localhost:4000/Milano/Milano_Trasporti.json"
 },{
@@ -45,12 +47,14 @@
     "indicators" : [{
 	"category" : "Vitalità",
 	"label" : "Tipo di alloggi",
-	"id" : "tipo_di_alloggi"
+	"id" : "tipo_di_alloggi",
+	"colors" : ["#FFFFDD","#AAF191","#80D385","#61B385","#3E9583","#217681","#285285","#1F2D86","#000086"]
     },{
 	"category" : "Vitalità",
 	"label" : "Densità di occupati (per mq)",
 	"id" : "densita_occupati",
-	"default" : true
+	"default" : true,
+	"colors" : ["#ffffff", "#cce6ff","#99ccff","#66b3ff","#3399ff","#0080ff","#004d99","#00264d","#000d1a"]
     }]
 },{
     "id" : "Milano_Istat",
@@ -62,7 +66,8 @@
     "indicators" : [{
 	"category" : "Popolazione",
 	"label" : "Popolazione residente",
-	"id" : "P1"
+	"id" : "P1",
+	"colors" : ["#ffffff", "#cce6ff","#99ccff","#66b3ff","#3399ff","#0080ff","#004d99","#00264d","#000d1a"]
     }]
 },{
     "id" : "Milano_Salute",
@@ -74,7 +79,8 @@
         "dataSource" : "Min. Salute",
         "id" : "Pharmacy",
 	"label" : "Farmacie",
-        "labels" : ["","3-6","6-10","10-15","15-19","19-25","25-35","35-50","50-65","65-74","74 e più"]
+        "labels" : ["","3-6","6-10","10-15","15-19","19-25","25-35","35-50","50-65","65-74","74 e più"],
+	"colors" : ["#EAF2F8","#D4E6F1","#A9CCE3","#7FB3D5","#5499C7","#2980B9","#2471A3","#1F618D","#1A5276"]
     }],
     "sourceId" : "Milano_quartieri"
 },{
@@ -99,7 +105,8 @@
         "dataSource" : "Min. Salute",
         "id" : "Pharmacy",
         "label" : "Farmacie",
-	"labels" : ["","3-6","6-10","10-15","15-19","19-25","25-35","35-50","50-65","65-74","74 e più"]
+	"labels" : ["","3-6","6-10","10-15","15-19","19-25","25-35","35-50","50-65","65-74","74 e più"],
+	"colors" : ["#EAF2F8","#D4E6F1","#A9CCE3","#7FB3D5","#5499C7","#2980B9","#2471A3","#1F618D","#1A5276"]
     }],
     "sourceId" : "Torino_quartieri"
 },{
@@ -110,7 +117,8 @@
         "dataSource" : "MIUR",
         "id" : "School",
         "label" : "Scuole",
-	"labels": ["","","6-10","10-15","15-19","","","","","",""]
+	"labels": ["","","6-10","10-15","15-19","","","","","",""],
+	"colors" : ["#E8F8F5","#D1F2EB","#A3E4D7","#76D7C4","#48C9B0","#1ABC9C","#148F77","#17A589","#0E6251"]
     }],
     "sourceId" : "Torino_quartieri",
     "type" : "layer",
@@ -123,7 +131,8 @@
         "dataSource" : "GTFS Comuni",
         "id" : "TransportStop",
         "label" : "Fermate TPL",
-	"labels": ["","","6-10","10-15","15-19","19-25","25-35","35-50","50-65","65-74","74 e più"]
+	"labels": ["","","6-10","10-15","15-19","19-25","25-35","35-50","50-65","65-74","74 e più"],
+	"colors" : ["#EAF2F8","#D4E6F1","#A9CCE3","#7FB3D5","#5499C7","#2980B9","#2471A3","#1F618D","#1A5276"]
     }],
     "sourceId" : "Torino_quartieri",
     "type" : "layer",
@@ -138,12 +147,14 @@
     "indicators" : [{
 	"category" : "Vitalità",
 	"label" : "Tipi di Alloggio",
-	"id" : "tipo_di_alloggi"
+	"id" : "tipo_di_alloggi",
+	"colors" : ["#FFFFDD","#AAF191","#80D385","#61B385","#3E9583","#217681","#285285","#1F2D86","#000086"]
     },{
 	"category" : "Vitalità",
 	"label" : "Densità di occupati (per mq)",
 	"id" : "densita_occupati",
-	"default" : true
+	"default" : true,
+	"colors" : ["#ffffff", "#cce6ff","#99ccff","#66b3ff","#3399ff","#0080ff","#004d99","#00264d","#000d1a"]
     }]
 },{
     "id" : "Torino_Istat",
@@ -155,6 +166,7 @@
     "indicators" : [{
         "category" : "Popolazione",
         "label" : "Popolazione residente",
-        "id" : "P1"
+        "id" : "P1",
+	"colors" : ["#ffffff", "#cce6ff","#99ccff","#66b3ff","#3399ff","#0080ff","#004d99","#00264d","#000d1a"]
     }]
 }]
