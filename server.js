@@ -25,7 +25,7 @@ const start = async () => {
         method: 'GET',
         path: '/mappa/menu',
         handler: function (request, h) {
-            return h.file('menu.json');
+            return {'hello' : "ale" }//h.file('menu.json');
         }
     });
 
