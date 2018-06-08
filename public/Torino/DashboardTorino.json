@@ -1,0 +1,34 @@
+{
+    "id": "Torino_dashboard_ISTAT",
+    "url": "http://localhost:4000/Torino/Torino_dashboard.json",
+    "dataSource": "ISTAT (censimento 2011 della popolazione e delle abitazioni)",
+    "list": [{
+	"label": "Popolazione residente",
+	"field": "P1",
+	"unit": ""
+    }],
+    "piechart": [{
+	"label": "Situazione Occupazionale",
+	"labels": ["occupati", "disoccupati", "in cerca di lavoro"],
+	"fields": ["P61", "DAF1", "P62"],
+	"colors": [ "#9e0142", "#fdae61", "#abdda4"],
+	"descrizione_fields": "DAF1=P60-P61-P62"
+    }],
+    "barchart2": [{
+	"label": "Popolazione per fasce d'età",
+	"data1": {
+	    "fields": ["DAF3", "DAF4", "DAF5", "DAF6", "DAF7", "DAF8", "DAF9", "DAF10"],
+	    "label": "donne",
+	    "color": "pink",
+	    "descrizione_fields": "DAF3=P14+P15-P30-P31, DAF4=P16+P17-P32-P33, DAF5=P18+P19-P34-P35, DAF6=P20+P21-P36-P37, DAF7=P22+P23-P38-P39, DAF8=P24+P25-P40-P41, DAF9=P26+P27-P42-P43, DAF10=P28+P29-P44-P45"
+	},
+	"data2": {
+	    "fields": ["DAF11","DAF12","DAF13","DAF14","DAF15","DAF16","DAF17","DAF18"],
+	    "label": "uomini",
+	    "color": "blue",
+	    "descrizione_fields": "DAF11=P30+P31, DAF12=P32+P33, DAF13=P34+P35, DAF14=P36+P37, DAF15=P38+P39, DAF16=P40+P41, DAF17=P42+P43, DAF18=P44+P45"
+	},
+	"labels": ["0-9", "10-19", "30-39", "40-49", "50-59", "60-69", ">70"]
+    }]
+}
+
