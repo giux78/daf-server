@@ -19,7 +19,7 @@
 	"dataSource" : "MIUR",
 	"labels" : ["","","6-10","10-15","15-19","","","","","",""],
         "colors" : ["#E8F8F5","#D1F2EB","#A3E4D7","#76D7C4","#48C9B0","#1ABC9C","#148F77","#17A589","#0E6251"],
-	"rawOB" : {
+	"raw" : {
 	    "url": "http://localhost:4000/Milano/incidenti.json",
 	    "color" : "red"
 	}
@@ -60,10 +60,15 @@
 	"default" : true,
 	"colors" : ["#ffffff", "#cce6ff","#99ccff","#66b3ff","#3399ff","#0080ff","#004d99","#00264d","#000d1a"],
 	"raw" : {
-            "url": "http://localhost:4000/Milano/incidenti.json",
+            "url" : "http://localhost:4000/Milano/incidenti.json",
             "color" : "red"
-        }
-
+        },
+	"grid" : {
+	    "url" : "http://localhost:4000/Milano/grid.json",
+	    "colorRange" : ["yellow", "blue"],
+	    "translate" : [9.191300, 45.464200],
+	    "scale"  : 1
+	}
     }]
 },{
     "id" : "Milano_Istat",
@@ -96,7 +101,7 @@
     "id" : "Torino_quartieri",
     "city" : "Torino",
     "type" : "source",
-    "url" : "http://localhost:4000/Torino/0_geo_zone_circoscrizioni_wgs84.json",
+    "url" : "http://localhost:4000/Torino/ex_quartieri_wsg84.geojson",
     "dataSource" : "tbd",
     "center" : [7.6869, 45.0703],
     "zoom" : 10.5,
