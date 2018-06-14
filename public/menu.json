@@ -102,7 +102,7 @@
     "city" : "Torino",
     "type" : "source",
     "url" : "https://api.daf.teamdigitale.it/mappa/Torino/ex_quartieri_wsg84.geojson",
-    "dataSource" : "tbd",
+    "dataSource" : "Comune di Torino",
     "center" : [7.6869, 45.0703],
     "zoom" : 10.5,
     "joinField" : "IDquartiere",
