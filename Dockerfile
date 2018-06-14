@@ -16,6 +16,8 @@ RUN git clone https://github.com/esterpantaleo/daf-server
 
 WORKDIR /daf-server
 
+RUN git checkout production
+
 RUN npm install
 
 CMD [ "npm", "start" ]
