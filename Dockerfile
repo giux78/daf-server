@@ -26,10 +26,10 @@ CMD [ "npm", "start" ]
 #RUN npm run build --production
 
 # Install `serve` to run the application.
-RUN npm install -g serve
+#RUN npm install -g serve
 
 # Set the command to start the node server.
-CMD serve -l 4000 #-s build
+#CMD serve -l 4000 #-s build
 
 # Tell Docker about the port we'll run on.
 EXPOSE 4000
